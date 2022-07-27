@@ -1,13 +1,15 @@
-## Getting Started
+# Kingworld-seele-bridge
 
-### Cloning the repo
+Apollo on bun is not here yet 🤔
 
-```sh
-bun create blank ./NAME_HERE
-```
+So we're back to RESTful bois
 
-### Execute a file (eg. src/index.js)
-    
-```sh
-bun run ./src/index.js
+P'saltyaom pls dont bonk me for using your repo names 😭
+
+## Development
+
+```bash
+bun i
+
+bun run dev
 ```

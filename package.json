@@ -1,8 +1,13 @@
 {
   "name": "kingworld-seele-bridge",
-  "version": "0.0.3",
-  "module": "src/index.js",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun ./src/server.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
+  },
+  "dependencies": {
+    "kingworld": "^0.0.0-experimental.17"
   }
 }
