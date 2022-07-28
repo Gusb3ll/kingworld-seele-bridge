@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "target": "ESNext",
+    "module": "ESNext",
     "lib": ["ESNext", "DOM.Iterable"],
     "types": ["bun-types"],
     "moduleResolution": "node",

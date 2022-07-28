@@ -2,10 +2,13 @@
   "name": "kingworld-seele-bridge",
   "version": "1.0.0",
   "scripts": {
-    "dev": "bun ./src/server.ts"
+    "dev": "bun ./src/server.ts",
+    "build": "tsc",
+    "start": "bun ./dist/server.js"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
     "@kingworldjs/cors": "^0.0.0-experimental.0",
