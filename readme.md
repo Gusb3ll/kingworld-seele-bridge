@@ -4,7 +4,15 @@ Apollo on bun is not here yet 🤔
 
 So we're back to RESTful bois
 
-P'saltyaom pls dont bonk me for using your repo names 😭
+## Example Request
+
+```bash
+GET / (status check)
+
+POST /h/:id (ex. /h/177013) <- will return only name for now
+
+POST /graphql (You need to provide graphql query as body, go see api.hifumin.app)
+```
 
 ## Development
 
