@@ -13,7 +13,7 @@ export async function getHentaiById(id: number) {
     })
 }
 
-export async function mirror({ operationName = 'getNhentaiBySearch', ...rest }: GraphQLBody) {
+export async function mirror({ operationName, ...rest }: GraphQLBody) {
     return fetch('https://api.hifumin.app/graphql', {
         method: 'POST',
         headers: {
