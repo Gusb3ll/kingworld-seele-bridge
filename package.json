@@ -8,6 +8,8 @@
     "bun-types": "latest"
   },
   "dependencies": {
+    "@kingworldjs/cors": "^0.0.0-experimental.0",
+    "@kingworldjs/schema": "^0.0.0-experimental.0",
     "kingworld": "^0.0.0-experimental.17"
   }
 }

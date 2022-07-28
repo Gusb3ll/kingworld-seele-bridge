@@ -1,10 +1,23 @@
 import KingWorld from 'kingworld'
-import { getHentaiById } from './services/app.service'
+import cors from '@kingworldjs/cors'
+import schema from '@kingworldjs/schema'
+
+import { graphQLBodySchema, type GraphQLBody } from './models/app.model'
+import { getHentaiById, mirror } from './services/app.service'
 
 const app = new KingWorld()
 
-app.get('/', () => ({ status: 'Ok', date: new Date() }))
-
-app.get<{ params: { id: string } }>('/h/:id', async ({ params: { id } }) => await getHentaiById(parseInt(id)))
+app.use(cors)
+    .get('/', () => ({ status: 'Ok', date: new Date() }))
+    .get<{
+        params: { id: string }
+    }>('/h/:id', ({ params: { id } }) => getHentaiById(+id))
+    .post<{
+        body: GraphQLBody
+    }>('/graphql', async ({ body }) => mirror(await body), {
+        preHandler: schema({
+            body: graphQLBodySchema
+        })
+    })
 
 export default app
