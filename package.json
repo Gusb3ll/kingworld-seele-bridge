@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "bun ./src/server.ts",
     "build": "tsc",
-    "start": "bun ./dist/server.js"
+    "start": "bun ./src/server.ts"
   },
   "devDependencies": {
     "bun-types": "latest",
